@@ -1,4 +1,7 @@
-# Hugo Theme Zozo
+# Hugo Theme Zozo Edited
+
+I have made changes to the original theme by Zeuk, this can be found [ZOZO](https://github.com/imzeuk/hugo-theme-zozo.git). 
+But i still reference the original theme in my Hugo-site for updates. 
 
 [![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?color=4664DA&style=flat-square)](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE)
 
