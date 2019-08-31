@@ -21,8 +21,6 @@ A simple and beautiful theme for Hugo
 + **Fancybox**
 + **GoogleAnalytics**
 
-[Demo](https://demo.zeuk.me) | [中文说明](./README-zh.md)
-
 ## Sceenshots
 
 ![zozo](./images/showcase.png)
