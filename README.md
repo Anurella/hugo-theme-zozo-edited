@@ -28,7 +28,7 @@ A simple and beautiful theme for Hugo
 ## Installation
 
 ```bash
-$ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
+$ git clone https://github.com/Anurella/hugo-theme-zozo-edited themes/zozo-edited
 ```
 
 **Important**: Take a look inside the [`exampleSite`](./exampleSite) folder of this theme. You'll find a file called [`config.toml`](./exampleSite/config.toml). To use it, copy the [`config.toml`](./exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change it.
@@ -43,7 +43,7 @@ Use the about page to introduce yourself to your visitors. You can customize the
 
 ## Logo
 
-In order to customize the logo and favicon, you need to place all the following files in the static folder at the root of your site, which will overwrite those files in the `themes/zozo/static/images/` folder.
+If using image logo and favicon, you need to place all the following files in the static folder at the root of your site, which will overwrite those files in the `themes/zozo/static/images/` folder. I used a text based logo
 
 ## Hide Pages
 
@@ -94,3 +94,4 @@ Released under the [MIT](https://github.com/imzeuk/hugo-theme-zozo/blob/master/L
 - [Aragaki](https://github.com/PCDotFan/Aragaki)
 - [菩提树下](https://blog.caicai.me/)
 - [olOwOlo](https://olowolo.com/)
+- [Zeuk](https://github.com/imzok)
