@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*basic styles starts*/
 html {
   background-color: #f7f7f7;
@@ -15,12 +16,14 @@ a {
   text-decoration: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   opacity: 1;
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
   /* color: #424242; */
 }
+
 /*
 a:hover, a:active, a:focus {
   color: #555555;
@@ -153,10 +156,11 @@ hr {
 
 .header .my_socials {
   list-style: none;
-  font-size:18px;
+  font-size: 18px;
   /* float: right; */
   /* margin: 5px 0; */
 }
+
 /*
 .header .my_socials i {
   margin-left: 10px;
@@ -174,6 +178,7 @@ hr {
 .header .my_socials a:focus {
   color: #000000;
 }
+
 /*
 .post {
   background-color: #ffffff;
@@ -373,7 +378,7 @@ hr {
 }
 
 .markdown {
-  line-height: 1.8em;
+  /* line-height: 1.8em; */
   word-wrap: break-word;
   word-break: normal;
   overflow-wrap: break-word;
@@ -383,7 +388,17 @@ hr {
 .markdown ol,
 .markdown dl {
   margin: 0.8em 0;
+  padding-left: 30px;
 }
+
+.markdown ol li {
+  list-style: unset;
+}
+
+.markdown ul li {
+  list-style: disc;
+}
+
 /*
 .markdown h1,
 .markdown h2,
@@ -415,22 +430,25 @@ hr {
 .markdown code {
   font-family: 'Roboto Mono', Menlo, Monaco, courier, monospace;
   font-size: 0.9em;
-  background: #f8f8f8 !important;
+  background: #383535 !important;
   border: none;
 }
 
 .markdown pre {
-  margin-top: 1.2em;
-  margin-bottom: 2.2em;
-  padding: 15px 20px;
+  /* margin-top: 1.2em;
+  margin-bottom: 2.2em; */
+  margin: .8em 0;
+  padding: 1em;
   display: block;
   overflow: auto;
   white-space: pre;
   word-wrap: break-word;
+  border-radius: 4px;
+  -moz-tab-size: 4;
 }
 
 .markdown code {
-  color: #666666;
+  color: #fdfafa;
   padding: 4px 5px;
   border-radius: 2px;
   white-space: nowrap;
@@ -438,7 +456,7 @@ hr {
 
 .markdown pre code {
   padding: 0;
-  color: #555555;
+  color: #fdfafa;
 }
 
 .markdown blockquote p {
@@ -472,7 +490,7 @@ hr {
 
 .markdown blockquote {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 2.5em 0;
   padding: 0 0 0 50px;
   font-style: italic;
@@ -498,7 +516,6 @@ hr {
 .markdown em {
   padding: 1px 2px;
   background-color: #fcfcf0;
-  font-weight: normal;
 }
 
 .markdown .fancybox {
@@ -523,7 +540,7 @@ a.back_to_top {
   font-size: 18px;
   text-align: center;
   -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   display: none;
@@ -546,11 +563,13 @@ a.back_to_top:focus span {
   color: #555555;
 }
 
-@media print, screen and (max-width: 680px) {
+@media print,
+screen and (max-width: 680px) {
   .nav_container {
     position: relative;
     z-index: 999;
   }
+
   .nav_container .site_nav {
     display: none;
     position: fixed;
@@ -560,31 +579,37 @@ a.back_to_top:focus span {
     width: 100%;
     background-color: #ffffff;
     -webkit-box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
-            box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
+    box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
   }
+
   .nav_container .site_nav ul {
     float: none;
     text-align: center;
   }
+
   .nav_container .site_nav li {
     float: none;
   }
+
   .nav_container .menu_icon {
     position: fixed;
     right: 0;
   }
+
   .back_to_top {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 1600px) {
+
   /* .main {
     width: 1000px;
   } */
   .nav_container {
     width: 840px;
   }
+
   .header,
   .content {
     width: 820px;
@@ -592,6 +617,7 @@ a.back_to_top:focus span {
 }
 
 @media screen and (max-width: 900px) {
+
   /* .main {
     width: 95%;
     margin-top: 20px;
@@ -599,22 +625,27 @@ a.back_to_top:focus span {
   .nav_container {
     width: 95%;
   }
+
   .header,
   .content {
     width: 90%;
   }
+
   .post_page {
     padding-top: 0;
   }
+
   .footer a {
     margin: 0 6px;
   }
+
   /* .post {
     margin-top: 40px;
   } */
   .post .post_title a {
     font-size: 1.4rem;
   }
+
   .post_footer {
     padding-bottom: 30px;
   }
@@ -626,6 +657,7 @@ a.back_to_top:focus span {
     opacity: 0;
     -webkit-transform: translateY(-3px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -637,12 +669,13 @@ a.back_to_top:focus span {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
