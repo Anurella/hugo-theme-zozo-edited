@@ -5,7 +5,7 @@
         <a href="{{ .Site.BaseURL }}">
           <span>{{ .Site.Title }}</span>
           <!-- uncomment if using image logo
-            <img src="{{ "images/logo.svg" | absURL }}"/> 
+            <img src="{{ "images/logo.svg" | absURL }}"/>
           -->
         </a>
       </h1>
@@ -18,7 +18,10 @@
         <a href="{{ $val }}" title="{{ $key }}" target="_blank"><i class="remixicon-{{ $key }}-fill"></i></a>
         {{ end }}
         {{ end }}
-        <a href="{{ .Site.RSSLink }}" type="application/rss+xml" title="rss" target="_blank"><i class="remixicon-rss-fill"></i></a>
+        {{ with .OutputFormats.Get "rss" -}}
+        <a href="{{ .Permalink }}" type="application/rss+xml" title="rss" target="_blank"><i class="remixicon-rss-fill"></i></a>
+        {{ end -}}
+        <!-- .Site.RSSLink is deprecated -->
       </div>
     </div>
   </div>

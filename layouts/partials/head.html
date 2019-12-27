@@ -32,7 +32,13 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end }}
 
-  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+  <!-- <title>{{ if .IsHome }}{{ .Page.Description }}{{ else }}{{ .Page.Description }} &middot; {{ .Title }}{{ end }}</title> -->
+   <title>{{ if .IsHome }}{{ .Page.Description }}{{ else }}{{ .Page.Description }}{{ end }}</title>
+
+  <!-- preload fonts -->
+  <link rel="preload" as="font" type="font/woff2" href="{{ "fonts/sansthreemintbold.woff2" | absURL }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ "fonts/ETCTrispaceVariable.woff2" | absURL }}" crossorigin>
+
 
   <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}"/>
   <link rel="stylesheet" href="{{ "css/animate.min.css" | absURL }}"/>
@@ -42,6 +48,13 @@
 
   <!-- custom css -->
   {{ range .Site.Params.customCSS }}
-  <link rel="stylesheet" href="{{ "css/" | absURL }}{{ . }}">
+  <link rel="preload" href="{{ "css/" | absURL }}{{ . }}" as="style" onload="this.rel='stylesheet'" crossorigin>
   {{ end }}
+
+  <!-- media css -->
+  {{ range .Site.Params.mobileCSS }}
+    <link rel="preload" href="{{ "css/" | absURL }}{{ . }}" as="style" media="(max-width: 45rem)"
+    onload="this.rel ='stylesheet'" crossorigin>
+  {{ end }}
+
 </head>

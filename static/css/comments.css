@@ -29,7 +29,8 @@
 }
 
 .v .vbtn:active,
-.v .vbtn:hover {
+.v .vbtn:hover,
+.v .vbtn:focus {
   color: #FFFFFF;
   border-color: #000000;
   background-color: #303538;

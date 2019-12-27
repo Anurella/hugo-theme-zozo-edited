@@ -1,5 +1,5 @@
 {{ $pages := where .Pages "Params.hidden" "ne" true }}
-{{ $paginator := .Paginate (where $pages "Type" "posts") }}
+{{ $paginator := .Paginate (where $pages "Type" "post") }}
 {{ range $paginator.Pages }}
 <div class="post animated fadeInDown">
   <div class="post_title">
@@ -37,12 +37,12 @@
   {{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
   {{ if $paginator.HasPrev }}
   <a href="{{$paginator.Prev.URL}}" class="pre">
-    {{ i18n "prev_page" }}
+     Prev
   </a>
   {{ end }}
   {{ if $paginator.HasNext }}
   <a href="{{$paginator.Next.URL}}" class="next">
-    {{ i18n "next_page" }}
+   Next
   </a>
   {{ end }}
   {{ end }}
