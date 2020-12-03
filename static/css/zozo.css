@@ -166,12 +166,6 @@ hr {
   margin-left: 10px;
 } */
 
-.header .my_socials a {
-  color: #000;
-  font-size: 12px;
-  float: none;
-  cursor: pointer;
-}
 
 .header .my_socials a:hover,
 .header .my_socials a:active,
