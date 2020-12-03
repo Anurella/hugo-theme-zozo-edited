@@ -31,15 +31,6 @@ A simple and beautiful theme for Hugo
 $ git clone https://github.com/Anurella/hugo-theme-zozo-edited themes/zozo-edited
 ```
 
-**Important**: Take a look inside the [`exampleSite`](./exampleSite) folder of this theme. You'll find a file called [`config.toml`](./exampleSite/config.toml). To use it, copy the [`config.toml`](./exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change it.
-
-## ExampleSite
-
-There is an example site with config file and markdown files in `exampleSite` directory.
-
-## About Page
-
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
 
 ## Logo
 
